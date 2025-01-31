@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.2.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.2.0 https://maven.apache.org/xsd/settings-1.2.0.xsd">
+  <localRepository>localrepo</localRepository>
+  <profiles>
+    <profile>
+      <id>defaultProfile</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <repositories>
+        <repository>
+          <id>maven-central</id>
+          <name>Maven Central</name>
+          <url>https://repo1.maven.org/maven2/</url>
+        </repository>
+        <repository>
+          <id>atlassian-proxy</id>
+          <name>Atlassian Maven 2 Proxy</name>
+          <url>https://packages.atlassian.com/artifactory/maven-atlassian-all/ </url>
+        </repository>
+        <repository>
+          <id>terracotta</id>
+          <name>Terracotta</name>
+          <url>https://repo.terracotta.org/maven2/</url>
+        </repository>
+        <repository>
+          <id>gradle-plugins</id>
+          <name>Gragle Plugins</name>
+          <url>https://plugins.gradle.org/m2/</url>
+        </repository>
+        <repository>
+          <id>mulesoft</id>
+          <name>Mulesoft</name>
+          <url>https://maven.anypoint.mulesoft.com/api/v1/maven/</url>
+        </repository>
+        <repository>
+          <id>aspose</id>
+          <name>Aspose</name>
+          <url>https://releases.aspose.com/java/repo/</url>
+        </repository>
+        <repository>
+          <id>clojars</id>
+          <name>Clojars</name>
+          <url>https://clojars.org/repo/</url>
+        </repository>
+        <repository>
+          <id>sonatype forge</id>
+          <name>Sonatype forge</name>
+          <url>https://repository.sonatype.org/content/repositories/forge/</url>
+        </repository>
+        <repository>
+          <id>mulesoft-releases</id>
+          <name>Mulesoft Releases</name>
+          <url>https://repository.mulesoft.org/releases/</url>
+        </repository>
+        <repository>
+          <id>mulesoft-public</id>
+          <name>mulesoft public</name>
+          <url>https://repository.mulesoft.org/nexus/content/repositories/public/</url>
+        </repository>
+        <repository>
+          <id>typesafe</id>
+          <name>Typesafe</name>
+          <url>https://repo.typesafe.com/typesafe/releases/</url>
+        </repository>
+        <repository>
+          <id>jenkins-releases</id>
+          <name>Jenkins</name>
+          <url>https://repo.jenkins-ci.org/releases/</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>maven-central</id>
+          <name>Maven Central</name>
+          <url>https://repo1.maven.org/maven2/</url>
+        </pluginRepository>
+        <pluginRepository>
+          <id>atlassian-proxy</id>
+          <name>Atlassian Maven 2 Proxy</name>
+          <url>https://packages.atlassian.com/maven/repository/public</url>
+        </pluginRepository>
+      </pluginRepositories>
+      <properties>
+        <downloadSources>true</downloadSources>
+        <downloadJavadocs>true</downloadJavadocs>
+      </properties>
+    </profile>
+  </profiles>
+</settings>
